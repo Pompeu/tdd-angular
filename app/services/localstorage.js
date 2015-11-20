@@ -2,7 +2,7 @@
   angular.module('localstorage',[])
     .factory('localstorage', localstorage);
 
-    localstorage.$intjec = ['$window'];
+    localstorage.$inject = ['$window'];
 
     function localstorage ($window) {
       var service = {
